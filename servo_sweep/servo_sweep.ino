@@ -11,7 +11,7 @@ void setup() {
 
 void loop() {
    // A pulse each 20ms
-   count= count + 10;
+   count= count + 1;
     digitalWrite(servoPin, HIGH);
     delayMicroseconds(count); // Duration of the pusle in microseconds
     digitalWrite(servoPin, LOW);
