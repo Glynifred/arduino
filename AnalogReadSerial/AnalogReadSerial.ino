@@ -20,17 +20,5 @@ void setup() {
 void loop() {
   // read the input on analog pin 0:
   int sensorValue = analogRead(A0);
-  int sensorInit = 820;
-  bool first = true;
-  // print out the value you read:
-  Serial.println(sensorValue);
-  if (sensorValue > = sensorInit)
-  {
-    digitialwrite(LED_BUILTIN, LOW);
-  }
-  if (sensorValue < = sensorInit)
-  {
-    digitialwrite(LED_BUILTIN, HIGH);
-  }
   delay(10);  // delay in between reads for stability
 }
